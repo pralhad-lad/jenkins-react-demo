@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage ('CLone') {
-            steps {
-                git 'https://github.com/pralhad-lad/jenkins-react-demo.git'
-            }
-        }
-
         stage('Install') {
             steps {
                 sh 'npm install'
